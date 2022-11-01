@@ -6,5 +6,10 @@ function sum(a, b)
 
 module.exports = {
     sum,
-    //subtract, //TODO: uncomment this line to make the subtract function available in other files
+    subtract, //TODO: uncomment this line to make the subtract function available in other files
 };
+
+function subtract(a, b)
+{
+    return a - b;
+}

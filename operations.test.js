@@ -33,3 +33,20 @@ test('subtracts 5 - (-5) to equal 10', () => {
 test('subtracts (-5) - 5 to equal -10', () => {
     expect(subtract(-5, 5)).toBe(-10)
 });
+
+
+//testing division
+test('divides 5 / 5 to equal 1', () => {
+    expect(divide(5, 5)).toBe(1)
+});
+
+test('divides 15 / 5 to equal 3', () => {
+    expect(divide(15, 5)).toBe(3)
+});
+
+test('divides -15 / 5 to equal -3', () => {
+    expect(divide(-15, 5)).toBe(-3)
+});
+test('divides 15 / 0 to equal error', () => {
+    expect(divide(15, 0)).toBe(error)
+});
